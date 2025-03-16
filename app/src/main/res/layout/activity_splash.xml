@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/red">
+
+    <!-- Pizza Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/icon"
+        android:contentDescription="Pizza Logo"
+        android:layout_marginBottom="20dp" />
+
+    <!-- "Pizza Recipes" Title -->
+    <TextView
+        android:id="@+id/title_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Recipes"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="5dp" />
+
+    <!-- "Make Your Pizza" Subtitle -->
+    <TextView
+        android:id="@+id/subtitle_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your Pizza"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Circular Loading Spinner -->
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:theme="@style/CustomProgressBar"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
